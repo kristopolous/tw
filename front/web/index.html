@@ -55,7 +55,7 @@
               </div>
               <div class="input-group col-sm-12">
                 <span id='image-button' class="input-group-btn input-group-lg"><!-- DO THIS -->
-                  <input type="file" id="image-upload">
+                  <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
                   <button class="btn btn-default btn-add btn-lg" type="button">
                     <span class="glyphicon glyphicon-camera"></span>
                   </button>
@@ -99,7 +99,8 @@
 
     <script type='text/template' id='tpl-result'>
       <h2><%= title %></h2>
-      map pin <%= distance %> away. <%= age %> ago.
+      <a href="https://www.google.com/maps/preview/@<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
+      Map it</a> <%= distance %> away. <%= age %> ago.
       <% if (image) { %>
         <img src="<%= img_url %>"> 
       <% } %>
@@ -114,11 +115,13 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $(function(){
+
       function toplevel_click(el) {
         $(el).hide();
         $(".lead").slideUp();
         $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
       }
+
       $('#found-button').click(function(){
         toplevel_click(this);
         $("#discover-container").slideUp();
