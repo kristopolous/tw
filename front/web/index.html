@@ -82,6 +82,9 @@
                 <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
               </div>
             </div>
+            <div id='discover-suggestions'>
+              <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
+            </div>
           </form>
           <div id="result-container">
             <div id="result-sort">
@@ -99,7 +102,7 @@
 
     <script type='text/template' id='tpl-result'>
       <h2><%= title %></h2>
-      <a href="https://www.google.com/maps/preview/@<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
+      <a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
       Map it</a> <%= distance %> away. <%= age %> ago.
       <% if (image) { %>
         <img src="<%= img_url %>"> 
@@ -109,6 +112,7 @@
         <span class='name'><%= author %></span>
       </div>
     </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
