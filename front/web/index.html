@@ -25,13 +25,11 @@
   <style>
     .btn-first { font-size: 150% }
     #found-container { margin-bottom: 1em }
-    #found-form, #discovery-form { display: none }
+    #found-form, #discover-form { display: none }
   </style>
   </head>
 
   <body>
-
-
     <div class="container">
 
       <div class="starter-template">
@@ -40,8 +38,12 @@
           <p class="lead">Find what's happening around you - right this second.</p>
         </div>
 
-        <div id="found-container" class='row'>
+        <div id="top-level-buttons" class="row">
           <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
+          <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
+        </div>
+
+        <div id="found-container" class='row'>
 
           <form class="form-horizontal" id="found-form">
             <div class="form-group">
@@ -53,7 +55,7 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-sm-10">
+              <div class="col-sm-12">
                 <button type="button" class="btn btn-block btn-success btn-lg">Tell The World!</button>
               </div>
             </div>
@@ -61,9 +63,8 @@
         </div>
 
         <div id="discover-container" class='row'>
-          <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
 
-          <form class="form-horizontal" id="discovery-form">
+          <form class="form-horizontal" id="discover-form">
             <div class="form-group">
               <div class="col-sm-12">
                 <h2>What're you looking for?</h2>
@@ -85,6 +86,14 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $(function(){
+      $('#found-button').click(function(){
+        $(this).slideUp();
+        $("#found-form").slideDown();
+      });
+      $('#discover-button').click(function(){
+        $(this).slideUp();
+        $("#discover-form").slideDown();
+      });
     });
     </script>
   </body>
