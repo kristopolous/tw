@@ -53,13 +53,18 @@
               <div class="col-sm-12">
                 <h2>What'd you find?</h2>
               </div>
-              <div class="col-sm-12">
-                <input type="text" class="input-lg form-control" id="found" placeholder="Say it in two words or less!">
+              <div class="input-group col-sm-12">
+                <span class="input-group-btn inpug-group-lg"><!-- DO THIS -->
+                  <button class="btn btn-default btn-add btn-lg" type="button">
+                    <span class="glyphicon glyphicon-camera"></span>
+                  </button>
+                </span>
+                <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-12">
-                <button type="button" class="btn btn-block btn-success btn-lg">Tell The World!</button>
+                <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
               </div>
             </div>
           </form>
@@ -73,19 +78,18 @@
                 <h2>What're you looking for?</h2>
               </div>
               <div class="col-sm-12">
-                <input type="text" class="input-lg form-control" id="discovery" placeholder="Say it in two words or less!">
+                <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
               </div>
             </div>
           </form>
         </div>
       </div>
-
     </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $(function(){
@@ -96,6 +100,7 @@
         $(this).hide();
         $("#found-form").slideDown();
         $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
+        $("#found-input").focus();
       });
 
       $('#discover-button').click(function(){
@@ -105,6 +110,7 @@
         $(this).hide();
         $("#discover-form").slideDown();
         $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
+        $("#discover-input").focus();
       });
     });
 
