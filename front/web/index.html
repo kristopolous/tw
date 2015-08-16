@@ -82,15 +82,19 @@
               </div>
             </div>
           </form>
-          <div id="result-sort">
-            Most Popular | Shortest Line
-          </div>
           <div id="result-container">
+            <div id="result-sort">
+              Most Popular | Shortest Line
+            </div>
+            <div id='result=list'>
+            </div>
           </div>
         </div>
       </div>
+    <footer>
+      <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
+    </footer>
     </div>
-
 
     <script type='text/template' id='tpl-result'>
       <h2><%= title %></h2>
@@ -109,24 +113,25 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $(function(){
-      $('#found-button').click(function(){
-        $("#discover-form").slideUp();
+      function toplevel_click(el) {
+        $(el).hide();
         $(".lead").slideUp();
-        $("#discover-button").slideDown();
-        $(this).hide();
-        $("#found-form").slideDown();
         $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
+      }
+      $('#found-button').click(function(){
+        toplevel_click(this);
+        $("#discover-container").slideUp();
+        $("#found-container").slideDown();
+        $("#discover-button").slideDown();
         $("#found-input").focus();
       });
 
       $('#discover-button').click(function(){
-        $("#found-form").slideUp();
-        $(".lead").slideUp();
-        $("#found-button").slideDown();
-        $(this).hide();
-        $("#discover-form").slideDown();
-        $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
+        toplevel_click(this);
+        $("#discover-container").slideDown();
+        $("#found-container").slideUp();
         $("#discover-input").focus();
+        $("#found-button").slideDown();
       });
     });
 
