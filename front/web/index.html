@@ -31,7 +31,13 @@
           <p><strong>Oops!</strong> Looks like we can't figure out how to get your GPS. You should use our mobile app!</p>
         </div>
         <div class='row'>
-          <h1><i class="fa fa-hand-peace-o"></i> Two Words</h1>
+          <div class="col-sm-6">
+            <h1><i class="fa fa-hand-peace-o"></i> Two Words</h1>
+          </div>
+          <div class="col-sm-6" id='header-button'>
+          </div>
+        </div>
+        <div class='row'>
           <p class="lead">Find what's happening around you - right this second.</p>
         </div>
 
@@ -84,12 +90,21 @@
     <script>
     $(function(){
       $('#found-button').click(function(){
-        $(this).slideUp();
+        $("#discover-form").slideUp();
+        $(".lead").slideUp();
+        $("#discover-button").slideDown();
+        $(this).hide();
         $("#found-form").slideDown();
+        $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
       });
+
       $('#discover-button').click(function(){
-        $(this).slideUp();
+        $("#found-form").slideUp();
+        $(".lead").slideUp();
+        $("#found-button").slideDown();
+        $(this).hide();
         $("#discover-form").slideDown();
+        $("#top-level-buttons").css({float: 'right'}).animate({marginTop: '-60px'});
       });
     });
 
