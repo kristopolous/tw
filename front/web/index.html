@@ -86,40 +86,70 @@
               <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
             </div>
           </form>
+        </div>
+      </div>
           <div id="result-container">
             <div id="result-sort">
               Most Popular | Shortest Line
             </div>
-            <div id='result=list'>
+            <div id='result-list'>
             </div>
           </div>
-        </div>
-      </div>
     <footer>
       <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
     </footer>
     </div>
 
-    <script type='text/template' id='tpl-result'>
-      <h2><%= title %></h2>
-      <a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
-      Map it</a> <%= distance %> away. <%= age %> ago.
-      <% if (image) { %>
-        <img src="<%= img_url %>"> 
-      <% } %>
-      <div class='author-footer'>
-        <span class='metric'><%= score %></span>
-        <span class='name'><%= author %></span>
-      </div>
-    </script>
+    <div id="template">
+      <script type='text/template' id='tpl-result'>
+        <h2><%= title %></h2>
+        <a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
+        Map it</a> <%= distance %> away. <%= age %> ago.
+        <% if (img_url) { %>
+          <img src="<%= img_url %>"> 
+        <% } %>
+        <div class='author-footer'>
+          <span class='metric'><%= score %></span>
+          <span class='name'><%= author %></span>
+        </div>
+      </script>
+    </div>
 
+    <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/evda.min.js"></script>
 
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
+    var Tpl = {}, test_data = [
+      {
+        title: "street tacos",
+        img_url: 'http://www.valeriescookbook.com/images/chicken-street-tacos-served-09.jpg',
+        lat: 34.052234,
+        long: -118.243685,
+        distance: 5,
+        age: +(new Date()) - 1000,
+        author: "taco_monster",
+        score: 0.98
+      }
+    ];
+
+    function generate(data_list) {
+      $("#result-list").empty();
+      _.each(data_list, function(row) {
+        $("#result-list").append( Tpl.result(row) );
+      });
+    }
+
     $(function(){
+
+      $("#template").children().each(function() {
+        var key = this.id.replace(/^tpl-/,'');
+        Tpl[key] = _.template(this.innerHTML);
+      });
+
+      generate(test_data);
 
       function toplevel_click(el) {
         $(el).hide();
@@ -145,9 +175,11 @@
     });
 
     if ("geolocation" in navigator) {
+    /*
       var watchID = navigator.geolocation.watchPosition(function(position) {
         do_something(position.coords.latitude, position.coords.longitude);
       });
+      */
     } else {
       $("#no-gps").slideDown();
     }
