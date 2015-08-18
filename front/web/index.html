@@ -102,15 +102,19 @@
 
     <div id="template">
       <script type='text/template' id='tpl-result'>
-        <h2><%= title %></h2>
-        <a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
-        Map it</a> <%= distance %> away. <%= age %> ago.
-        <% if (img_url) { %>
-          <img src="<%= img_url %>"> 
-        <% } %>
-        <div class='author-footer'>
-          <span class='metric'><%= score %></span>
-          <span class='name'><%= author %></span>
+        <div class="panel panel-default">
+        <div class="panel-heading"><%= title %></div>
+          <div class="panel-body">
+            <p><a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
+            Map it</a> <%= distance %> away. <%= age %> ago.</p>
+            <% if (img_url) { %>
+              <img src="<%= img_url %>"> 
+            <% } %>
+            <div class='author-footer'>
+              <span class='metric'><%= score %></span>
+              <span class='name'><%= author %></span>
+            </div>
+          </div>
         </div>
       </script>
     </div>
