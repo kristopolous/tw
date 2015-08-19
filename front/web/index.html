@@ -87,8 +87,6 @@
               <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
             </div>
           </form>
-        </div>
-      </div>
           <div id="result-container">
             <nav id="result-sort">
               <ul class="pagination">
@@ -99,6 +97,8 @@
             <div id='result-list'>
             </div>
           </div>
+        </div>
+      </div>
     <footer>
       <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
     </footer>
@@ -118,8 +118,16 @@
             </div>
             <% } %>
             <div class='author-footer'>
-              <span class='metric'><%= score %></span>
-              <span class='name'><%= author %></span>
+              <div class='metric'>
+                <div class='bg-stars'>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+
+                <div class='fg-stars' style='width: <%= score %>%'>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+              </div>
+              <span class='name'>@<%= author %></span>
             </div>
           </div>
         </div>
@@ -142,7 +150,7 @@
         distance: 5,
         age: +(new Date()) - 1000,
         author: "taco_monster",
-        score: 0.98
+        score: 60
       }
     ];
 

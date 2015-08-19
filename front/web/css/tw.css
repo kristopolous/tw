@@ -9,5 +9,19 @@ footer { padding: 30px 0px; opacity: 0.5;text-align: center; margin: 0 auto; }
 .image-container { position: relative; width: 100% ;overflow: hidden}
 .image-container img { width: 100% }
 .img-content { position: absolute }
-.result .panel-heading { font-family: 'Chau Philomene One', sans-serif; font-size: 24px }
+.name, .result .panel-heading { font-family: 'Chau Philomene One', sans-serif; font-size: 24px }
 .result h2 { margin: 0 }
+.name { color: #444 }
+.metric { 
+color: #ddd;
+font-size: 24px;
+display: inline-block; position: relative; }
+.metric .fg-stars { 
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  color: gold;
+  overflow: hidden;
+  white-space: nowrap;
+}
