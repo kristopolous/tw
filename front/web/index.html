@@ -108,7 +108,10 @@
             <p><a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
             Map it</a> <%= distance %> away. <span class='time' data='<%= age %>'></span>.</p>
             <% if (img_url) { %>
-              <img src="<%= img_url %>"> 
+            <div class='image-container'>
+              <img class='img-content' src="<%= img_url %>"> 
+              <img class='img-sizing' src='img/16x9.png'>
+            </div>
             <% } %>
             <div class='author-footer'>
               <span class='metric'><%= score %></span>
