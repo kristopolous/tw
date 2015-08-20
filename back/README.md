@@ -98,3 +98,8 @@ The absolute worst case - this is the opportunity to get the most information on
  * Ran into a major bug.
 
 In any of these cases, the user experience testimonial here is gold dust ... it's probably not too much to ask the user for their email address to open up a dialog on what happened.
+
+# Stemming
+
+There may be value in making sure that the dictionary is only composed of words that have been "found" before.  This approach is better
+than a prebaked dictionary because it allows for slang and at the same time doesn't permit bad spellings to be auto-corrected to absurd words that would never appear.
