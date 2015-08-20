@@ -23,6 +23,18 @@ So there are five sortings:
 
 These have to be combined in some discrete and reasonable way.
 
+# Real-time results
+If we are showing images in the real-time google-instant like results, we have to not be stupid and push excessive data down to the user
+in a way that makes the experience slow.  The very purpose of this feature is to provide instant, immediate feedback.
+
+# Stemming
+There may be value in making sure that the dictionary is only composed of words that have been "found" before.  This approach is better
+than a prebaked dictionary because it allows for slang and at the same time doesn't permit bad spellings to be auto-corrected to absurd words that would never appear.
+
+# frequent search terms
+This is the idea of suggesting terms to search for which may be geo-spatially an chrono-spacially popular at that moment ... under the 
+auspices that there is an immediate geo and temporally specific notion of popularity
+
 ## Open questions
 
 ### Distance 
@@ -99,7 +111,3 @@ The absolute worst case - this is the opportunity to get the most information on
 
 In any of these cases, the user experience testimonial here is gold dust ... it's probably not too much to ask the user for their email address to open up a dialog on what happened.
 
-# Stemming
-
-There may be value in making sure that the dictionary is only composed of words that have been "found" before.  This approach is better
-than a prebaked dictionary because it allows for slang and at the same time doesn't permit bad spellings to be auto-corrected to absurd words that would never appear.
