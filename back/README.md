@@ -47,4 +47,54 @@ Popularity: Is that a metric of similar words in close proximity at a short amou
 The distinction between "Did you get the food quickly?" and "Was there a long line?" probably falls on the "Did you get the food quickly?".  Vendors such as Diddy Reise go through their long lines much quicker then say, Pinks Hot Dogs.  A long line is a poorer fidelity of value than asking for actual wait time.
 
 ## The follow up
+It seems to become increasingly relevant that a followup is done with a user who executes a search on if they
 
+ * received good information 
+ * found what they were looking for
+ * were happy with the experience
+
+It would be preferable to make this as easy as possible and be able to imply as much of this from the question as possible
+
+Let's make a table
+
+          | y n | y n | y n | y n | y n | y n | y n | y n 
+    ------+-----+-----+-----+-----+-----+-----+-----+-----
+    info  | x   | x   | x   | x   |   x |   x |   x |   x
+    found | x   | x   |   x |   x | x   | x   |   x |   x
+    happy | x   |   x | x   |   x | x   |   x | x   |   x
+    ------+-----+-----+-----+-----+-----+-----+-----+-----
+    case# |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8
+
+Briefly discussing what would lead to each case:
+
+#### 1 The information was good, they found it, and were happy with the results.
+Pat ourselves on the back, we can go home.  Also, if there's a reputational element that the poster can receive, this is the time to give it.
+
+#### 2 The information was good, they found it, and were not happy with the results
+These users are pobably just picky and can probably be ignored.  But we may ask them why
+  
+#### 3 The information was good, they did not find it, and are happy with the results
+This is probably outside the scope of the application although it's an interesting question.  The use-case here, that is more of an intellectual exercise would be when a user found something better through traditional means and thus was OK with the failed pursuit.
+
+Regardless, this most certainly means that they will be less likely to turn to the application in the future. 
+
+#### 4 The information was good, they did not find it, and are not happy
+I don't think this is a logical possibility other than if they are commenting on the usability of the application.  It may be possible that they just couldn't figure out how to navigate themselves to the place.  If this is the case, then it's a UI and flow problem.
+
+#### 5 The information was bad, they did find it, and are happy
+In this case, the app failed so miserably that the person was able to find it without using the app.  That's a failure of the core business and should be dealt with in a similar way as case #8 below.
+
+#### 6 The information was bad, they did find it, and are not happy
+This is really quite similar to use-case 2 although if we aren't careful, this could mean they were frustrated with the app AS A PART of the overall experience which then will reflect poorly on the vendor in a way that the vendor would DILIBERATELY DISTANCE themselves from the product.  This is also a terrible thing.
+
+#### 7 The information was bad, they did not find it, and are happy
+I think we're dealing with another logical impossibility.
+
+#### 8 The information was bad, they did not find it, and are not happy
+The absolute worst case - this is the opportunity to get the most information one can from the customer because there's a huge need to correct things.  Since they've already established themselves as a user of the software, they maybe 
+
+ * Don't know how to interface it
+ * Received a promise that didn't come through in their mind
+ * Ran into a major bug.
+
+In any of these cases, the user experience testimonial here is gold dust ... it's probably not too much to ask the user for their email address to open up a dialog on what happened.
