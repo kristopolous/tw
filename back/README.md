@@ -134,8 +134,23 @@ In any of these cases, the user experience testimonial here is gold dust ... it'
       img
     }
 
-There should be a way to post anonymously or log in through fb/twitter ... anonymous users have the same session though to
+In the feedback system where you post that you've found something, backlinking it to the thing that led you there is pretty high
+quality information.
+
+Having an admin option within the app may be the way to go.
+Does laravel play a role for the financials and dashboard?
+How to quantify gain through app... you can see how many people searched and then successfully bought
+The follow-thru feature is absolutely crucial
+
+
+There should be a way to post anonymously or log in through fb/twitter/ig? ... anonymous users have the same session though to
 prevent spammy abuse.
 
+Traditional RDBMS for accounts - should have followers / friends twitter-like settings
+optional post-to-twitter (fb? probably not) (ig? maybe?)
+
 TODO: payment gateway, accounts of paying members
+  Intelligence dashboard
+
+  Create mock data
   email reminders of payment
