@@ -111,3 +111,31 @@ The absolute worst case - this is the opportunity to get the most information on
 
 In any of these cases, the user experience testimonial here is gold dust ... it's probably not too much to ask the user for their email address to open up a dialog on what happened.
 
+## Endpoints
+
+    GET /find/(query)
+    {
+      query: (query),
+      res: [ ... ]
+    }
+
+    GET /suggest/(query)
+    {
+      query: (query),
+      res: [ ... ]
+    }
+
+    POST /found
+    {
+      lat:
+      long:
+      user??
+      words:
+      img
+    }
+
+There should be a way to post anonymously or log in through fb/twitter ... anonymous users have the same session though to
+prevent spammy abuse.
+
+TODO: payment gateway, accounts of paying members
+  email reminders of payment
