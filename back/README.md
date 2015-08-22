@@ -1,3 +1,7 @@
+Differentiation between user and vendor?
+
+ * This permits a user to communicate directly with a vendor, saying "OMW" where the vendor can see where the person is and their estimated time of arrival ... uber-esque
+
 thoughts:
 
  * real-time results

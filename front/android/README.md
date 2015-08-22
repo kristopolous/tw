@@ -1,7 +1,13 @@
+## coding
+
 multilingual:
   http://developer.android.com/training/basics/supporting-devices/languages.html
 
 push notifications are called this: https://developers.google.com/cloud-messaging/
+
+socket.io support: http://socket.io/blog/native-socket-io-and-android/#
+
+## discussion
 
 The link should be between the last map point and arrival.
 
@@ -21,3 +27,9 @@ Things to notice:
  * The activity bar with all the functionality.
  * There's an obvious content creation focal point - bottom center.
  * The twitter design could facilitate the search
+
+## emotional goals
+
+evoke: clean, safe, secure, accurate, urgent.  snapchat heavily evokes privacy.
+
+making the experience look like a private exclusive club (walled garden) seems to be effective.
