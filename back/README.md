@@ -1,3 +1,13 @@
+## storage
+
+No matter what is used for searching, everything should be archived to do stats and analytics on for the paid vendor versions.
+
+rdbms db:
+
+ * posts - [ who, what, where, when, popularity, entry? ]
+ * queries - [ who, what, where, when, success ]
+ * users 
+
 Differentiation between user and vendor?
 
  * This permits a user to communicate directly with a vendor, saying "OMW" where the vendor can see where the person is and their estimated time of arrival ... uber-esque
