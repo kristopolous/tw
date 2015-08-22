@@ -1,3 +1,9 @@
+## arch
+
+This is also going to serve as a bootstrap to a modern stack.
+
+docker + express + angular 
+
 ## storage
 
 No matter what is used for searching, everything should be archived to do stats and analytics on for the paid vendor versions.

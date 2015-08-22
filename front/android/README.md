@@ -5,6 +5,8 @@ multilingual:
 
 push notifications are called this: https://developers.google.com/cloud-messaging/
 
+gps: http://developer.android.com/training/location/index.html 
+
 socket.io support: http://socket.io/blog/native-socket-io-and-android/#
 
 ## discussion
