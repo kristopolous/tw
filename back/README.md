@@ -4,6 +4,8 @@ This is also going to serve as a bootstrap to a modern stack.
 
 docker + express + angular 
 
+socket.io may not be necessary or prudent.  I've got nothing against it, just don't know.
+
 ## storage
 
 No matter what is used for searching, everything should be archived to do stats and analytics on for the paid vendor versions.
@@ -13,6 +15,15 @@ rdbms db:
  * posts - [ who, what, where, when, popularity, entry? ]
  * queries - [ who, what, where, when, success ]
  * users 
+
+Probably mysql + redis, although elastic search is the new hotness (I don't think this is a valid application of it)
+
+Having expiry on entries seems to be a good idea ... mongo has this ... redis's methodology is key-wide.
+
+Also there's a question about the facet-ness of the search (see below) the issue is that redis may not have an obvious way to do this.
+
+There's the zset based method but that doesn't preference time - unless we want all the results which exist in the db to have an equal footing.
+
 
 Differentiation between user and vendor?
 
