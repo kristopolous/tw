@@ -1,7 +1,15 @@
-var server = require('http').createServer();
-var io = require('socket.io')(server);
-io.on('connection', function(socket){
-   socket.on('event', function(data){});
-   socket.on('disconnect', function(){});
+var app = require('express').createServer();
+var io = require('socket.io')(app);
+
+app.listen(80);
+
+app.get('/', function (req, res) {
+  res.sendfile(__dirname + '/index.html');
 });
-server.listen(3000);
+
+io.on('connection', function (socket) {
+  socket.emit('news', { hello: 'world' });
+  socket.on('my other event', function (data) {
+    console.log(data);
+  });
+});

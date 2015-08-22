@@ -136,10 +136,11 @@
 
     <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/evda.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/evda.min.js"></script>
 
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/socket.io/socket.io.js"></script>
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
     <script>
     var Tpl = {}, test_data = [
       {
@@ -153,6 +154,12 @@
         score: 60
       }
     ];
+
+    var socket = io.connect('http://localhost');
+    socket.on('news', function (data) {
+      console.log(data);
+      socket.emit('my other event', { my: 'data' });
+    });
 
     function generate(data_list) {
       $("#result-list").empty();
