@@ -31,6 +31,10 @@
         <div class="alert alert-warning" role="alert" id='no-gps'>
           <p><strong>Oops!</strong> Looks like we can't figure out how to get your GPS. You should use our mobile app!</p>
         </div>
+        <div class="btn-group pull-right" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Log in</button>
+          <button type="button" class="btn btn-default">Sign up</button>
+        </div>
         <div class='row'>
           <div class="col-sm-6">
             <h1><i class="fa fa-hand-peace-o"></i> Two Words</h1>
@@ -38,6 +42,7 @@
           <div class="col-sm-6" id='header-button'>
           </div>
         </div>
+
         <div class='row'>
           <p class="lead">Find what's happening around you - right this second.</p>
         </div>
@@ -132,6 +137,43 @@
           </div>
         </div>
       </script>
+    </div>
+    <div id="dialog">
+      <div class="modal fade" id="dialog-login">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Log in</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="dialog-signup">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Sign up</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
