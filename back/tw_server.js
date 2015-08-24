@@ -13,3 +13,8 @@ io.on('connection', function (socket) {
     console.log(data);
   });
 });
+
+// Receive queries
+// Store results in db
+// Send results
+// Receive posts
