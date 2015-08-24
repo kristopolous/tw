@@ -35,3 +35,19 @@ There's additional questions like:
   * How can then provide recurring value for your business after the sale?
 
 These complex goals can't be communicated in complex ways
+
+Available metrics:
+
+  * People who searched for X also searched for Y
+  * This week/month/year, people have searched for X here in this volume
+  * People have *found* X here but were not satisfied
+  * People have *failed to* find X here at hours *A, B, and C*
+
+See if you can pull in the twitter and facebook followers and then cross-reference the two and connect the users
+
+Adwords
+
+Provides an always-on system that is geo-fenced around the advertiser.  The advertiser can increase the words that are hit
+or increase the distance.
+
+Words should be leased for some period and then put up for some kind of auction at the end of the period, so that more valuable words increase in value without abruptly killing off previous customers.
