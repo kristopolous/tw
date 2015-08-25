@@ -70,7 +70,11 @@
       </div>
     </nav>
 
+
     <div class="container">
+      <div class='row'>
+        <p class="lead">Find what's happening around you - right this second.</p>
+      </div>
       <div id="ep-pro" class='endpoint'>
         <p>Do you run a mobile business?  Are you looking to increase your sales?</p>
 
@@ -134,9 +138,6 @@
         </div>
       </div>
 
-      <div class='row'>
-        <p class="lead">Find what's happening around you - right this second.</p>
-      </div>
 
       <div id="top-level-buttons" class="row">
         <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
@@ -168,7 +169,7 @@
         </form>
       </div>
 
-      <div id="ep-discover" class='row endpoint'>
+      <div id="ep-find" class='row endpoint'>
 
         <form class="form-horizontal" id="discover-form">
           <div class="form-group">
@@ -314,17 +315,11 @@
 
       $('#found-button,#header-found').click(function(){
         $("#top-level-buttons").hide();
-        $("#header-found").addClass('active').siblings().removeClass('active');
-        $(".endpoint").hide();
-        $("#ep-found").show();
         $("#found-input").focus();
       });
 
       $('#discover-button,#header-find').click(function(){
         $("#top-level-buttons").hide();
-        $("#header-find").addClass('active').siblings().removeClass('active');
-        $(".endpoint").hide();
-        $("#ep-discover").show();
         $("#discover-input").focus();
       });
     });
