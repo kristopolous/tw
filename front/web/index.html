@@ -23,52 +23,55 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-  .deals .panel{
-    height: 20em;
-    position: relative;
-  }
-  .price { position: absolute;
-    bottom: 0;
-    text-align: center;
-  }
-  a{cursor:pointer}
+    .deals .panel{
+      height: 20em;
+      position: relative;
+    }
+    .price { position: absolute;
+      bottom: 0;
+      text-align: center;
+    }
+    .panel-heading h3 {
+      margin: 0;
+    }
+    .endpoint { display: none }
+    a{cursor:pointer}
     </style>
   </head>
 
   <body>
 
-      <div class="alert alert-warning" role="alert" id='no-gps'>
-        <p><strong>Oops!</strong> Looks like we can't figure out how to get your GPS. You should use our mobile app!</p>
-      </div>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand"><i class="fa fa-hand-peace-o"></i> Two Words</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li id='header-find'><a><b>Find It</b></span></a></li>
-              <li id='header-found'><a>Found it</a></li>
-              <li><a href="#">Get The App</a></li>
-              <li><a href="#">Go Pro</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a data-toggle="modal" data-target="#dialog-login">Log in</a></li>
-              <li><a data-toggle="modal" data-target="#dialog-signup">Sign up</a></li>
-            </ul>
-          </div>
+    <div class="alert alert-warning" role="alert" id='no-gps'>
+      <p><strong>Oops!</strong> Looks like we can't figure out how to get your GPS. You should use our mobile app!</p>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><i class="fa fa-hand-peace-o"></i> Two Words</a>
         </div>
-      </nav>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li id='header-find'><a href="#find"><b>Find It</b></span></a></li>
+            <li id='header-found'><a href="#found">Found it</a></li>
+            <li><a href="#app">Get The App</a></li>
+            <li><a href="#pro">Go Pro</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#dialog-login">Log in</a></li>
+            <li><a data-toggle="modal" data-target="#dialog-signup">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
-      <div id="pro-pitch">
+      <div id="ep-pro" class='endpoint'>
         <p>Do you run a mobile business?  Are you looking to increase your sales?</p>
 
         <h2>Know your customers.</h2>
@@ -91,6 +94,7 @@
            <div class="panel panel-default">
              <div class="panel-heading"><h3>DeepInsight</h3></div>
              <div class="panel-body">
+               Real-time Analytics.
                <p>Free for 14 days.</p>
                <h3 class='price'>$39.95/month</h3>
              </div>
@@ -139,7 +143,7 @@
         <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
       </div>
 
-      <div id="found-container" class='row'>
+      <div id="ep-found" class='row endpoint'>
 
         <form class="form-horizontal" id="found-form">
           <div class="form-group">
@@ -164,7 +168,7 @@
         </form>
       </div>
 
-      <div id="discover-container" class='row'>
+      <div id="ep-discover" class='row endpoint'>
 
         <form class="form-horizontal" id="discover-form">
           <div class="form-group">
@@ -310,16 +314,16 @@
       $('#found-button,#header-found').click(function(){
         $("#top-level-buttons").hide();
         $("#header-found").addClass('active').siblings().removeClass('active');
-        $("#discover-container").hide();
-        $("#found-container").show();
+        $(".endpoint").hide();
+        $("#ep-found").show();
         $("#found-input").focus();
       });
 
       $('#discover-button,#header-find').click(function(){
         $("#top-level-buttons").hide();
         $("#header-find").addClass('active').siblings().removeClass('active');
-        $("#discover-container").show();
-        $("#found-container").hide();
+        $(".endpoint").hide();
+        $("#ep-discover").show();
         $("#discover-input").focus();
       });
     });
