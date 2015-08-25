@@ -274,6 +274,7 @@
     <script src="/js/socket.io/socket.io.js"></script>
     <script src="/js/ie10-viewport-bug-workaround.js"></script>
     <script>
+    var last_hash;
     var Tpl = {}, test_data = [
       {
         title: "street tacos",
@@ -356,6 +357,16 @@
 
     output.appendChild(img);
   };
+  setInterval(function(){
+    var my_hash = window.location.hash.slice(1);
+
+    if(last_hash != my_hash && my_hash) {
+      $(".endpoint").hide();
+      $("#ep-" + my_hash).show();
+      $('a[href="#' + my_hash + '"]').parent().addClass('active').siblings().removeClass('active');
+      last_hash = my_hash;
+    }
+  }, 150);
 
     if ("geolocation" in navigator) {
     /*
