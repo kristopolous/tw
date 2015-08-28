@@ -1,11 +1,20 @@
+freerangechicken: fr
+russian: ru
+
 2015 aug 28
   Do you ever go anywhere unannounced?
+    fr:no
+
   How many vehicles do you have?
+    fr:1
+
   How often do you run out of items?
+    fr:infrequently
 
 2015 aug 21
   How long are you at a location?
-    (20 minutes -> few hours)
+    ru(20 minutes -> few hours) fr:~3
+
   Do you generally make more sales where there are more people or do you find it to be a gamble?
 
 
