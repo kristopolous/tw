@@ -30,6 +30,6 @@ app.use(orm.express("mysql://php:fixy2k@localhost/tw", {
 app.listen(80);
 
 app.get("/", function (req, res) {
-    // req.models is a reference to models used above in define()
-    req.models.person.find(...);
+  // req.models is a reference to models used above in define()
+  req.models.users.find({name: "taco_monster"});
 });
