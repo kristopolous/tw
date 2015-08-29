@@ -1,14 +1,14 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('database', 'username', 'password');
+var sequelize = new Sequelize('tw', 'php', 'fixy2k');
 
 var User = sequelize.define('User', {
-  username: Sequelize.STRING,
-  birthday: Sequelize.DATE
+  name: Sequelize.STRING,
+  oauth: Sequelize.STRING
 });
 
 sequelize.sync().then(function() {
   return User.create({
-    username: 'janedoe',
+    name: 'janedoe',
     birthday: new Date(1980, 6, 20)
   });
 }).then(function(jane) {
