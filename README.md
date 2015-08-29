@@ -6,3 +6,5 @@ This is just a project to help me learn the following things:
   * android
 
 Those are really the 4 things I want to get a lot better at so I have this toy project that will help me get there.
+
+don't worry about testability at this phase.
