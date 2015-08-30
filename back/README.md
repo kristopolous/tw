@@ -1,8 +1,10 @@
+Just make a user ... anything will do, don't need fb auth working
+
 ## arch
 
 This is also going to serve as a bootstrap to a modern stack.
 
-docker + express + angular 
+    /* docker */ + express + angular 
 
 socket.io may not be necessary or prudent.  I've got nothing against it, just don't know.
 
