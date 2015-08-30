@@ -191,7 +191,7 @@ there should be a way to store them.
 
 TODO: payment gateway, accounts of paying members
   Intelligence dashboard
-
+  vendor profile
   Create mock data
   email reminders of payment
 
