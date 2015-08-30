@@ -15,3 +15,7 @@ actions:
   communicate with vendor
   communicate with customer
   update vendor
+
+  proposal of minimum $$
+
+point system for encouragement of posts
