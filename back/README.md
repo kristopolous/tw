@@ -182,8 +182,16 @@ prevent spammy abuse.
 Traditional RDBMS for accounts - should have followers / friends twitter-like settings
 optional post-to-twitter (fb? probably not) (ig? maybe?)
 
+### customer opportunities
+
+there's value in proposing to vendors a gauranteed minimum sale and value to vendors in knowing the parking situation.
+
+Also demographics are important to some vendors ... age and gender maybe --- these may be of low value but if we can get them
+there should be a way to store them.
+
 TODO: payment gateway, accounts of paying members
   Intelligence dashboard
 
   Create mock data
   email reminders of payment
+
