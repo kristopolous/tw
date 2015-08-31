@@ -2118,3 +2118,21 @@ p,.box.style1 {
   color: black;
 }
 
+input {
+  border: 1px solid gray;
+}
+nav {
+  padding: 0.77777775em 0;
+}
+nav input.email {
+  margin:0 0.25em;
+  padding: 0 0.25em;
+  background: gray;
+  color: white;
+  border-radius: 3px;
+}
+#nav a.button.big {
+  margin: 0;
+  display:inline-block;
+  margin-bottom: -15px;
+}
