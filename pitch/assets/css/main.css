@@ -2114,3 +2114,7 @@
   margin: 1em auto;
   left: 0;
 }
+p,.box.style1 {
+  color: black;
+}
+
