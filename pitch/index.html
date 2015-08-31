@@ -19,8 +19,8 @@
 			<nav id="nav">
         <div id='container'>
         Email:
-        <input class='email' type="text" name="name" id="name" placeholder="your email" />
-				<a href="#work" class="button big">Get Invited</a>
+        <input class='email' type="email" value='' name="name" id="email" placeholder="your email" />
+				<a href="javascript:subscribe()" class="disable button big" id='invite-button'>Get Invited</a>
         </div>
 			</nav>
 		<!-- Home -->
@@ -96,5 +96,30 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+      <script>
+var email_valid = false;
+
+$(function(){
+  $("#email").val('').bind("change keydown keyup", function() {
+    email_valid = $("#email").is(':valid');
+    if($("#email").is(':valid') && this.value.length) {
+      $("#invite-button").removeClass('disable');
+    } else {
+      $("#invite-button").addClass('disable');
+    }
+  });
+});
+
+function subscribe(){
+  var email = $("#email").val();
+
+  if(email_valid) {
+    $("#invite-button").css({background: 'grey', color: 'silver', opacity: 0.5, cursor: 'default'});
+    $.post('subscribe.php', {email: email}, function(){
+      $("#container").html("<p>Hey, you're awesome! Thanks for signing up. :-)</p>").fadeIn();
+    });
+  }
+}
+      </script>
 	</body>
 </html>
