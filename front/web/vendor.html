@@ -23,19 +23,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    .deals .panel{
-      height: 20em;
-      position: relative;
-    }
-    .price { position: absolute;
-      bottom: 0;
-      text-align: center;
-    }
-    .panel-heading h3 {
-      margin: 0;
-    }
-    .endpoint { display: none }
     a{cursor:pointer}
+    .content { margin-bottom: 2em }
+    .content img {box-shadow: 0 0 1px 1px black}
+    .header { margin-top: 3em;margin-bottom: 3em }
     </style>
   </head>
 
@@ -68,21 +59,46 @@
     </nav>
 
     <div class="container">
-      <div class='row'>
-        <div class="col-md-2"><img src='mockup/logo.jpg' class="img-circle"></div>
+      <div class='row header'>
+        <div class="col-md-4 text-center"><img src='mockup/logo.jpg' class="img-circle"></div>
         <div class="col-md-8">
           <h2>Business Name</h2>
           <div class="col-md-4">
-            <button type="button" class="btn btn-default btn-link">Contact</button>
-            <button type="button" class="btn btn-default btn-link">Locate</button>
+            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-mobile"></i>
+              Contact</button>
+            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-location-arrow"></i>Locate</button>
           </div>
           <div class="col-md-4">
-            <button type="button" class="btn btn-default btn-link">Follow</button>
-            <button type="button" class="btn btn-default btn-link">Social Media</button>
+            <button type="button" class="btn btn-lg btn-link">Follow</button>
+            <button type="button" class="btn btn-lg btn-link">Social Media</button>
           </div>
         </div>
+      </div>
 
+      <div class='row content'>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+      </div>
+      <div class='row content'>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src='mockup/16x9_gray.png' class="img-thumbnail">
+        </div>
+      </div>
     </div>
+
     <footer>
       <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
     </footer>
@@ -116,16 +132,6 @@
     <script>
     var last_hash;
     var Tpl = {}, test_data = [
-      {
-        title: "street tacos",
-        img_url: 'http://www.valeriescookbook.com/images/chicken-street-tacos-served-09.jpg',
-        lat: 34.052234,
-        long: -118.243685,
-        distance: 5,
-        age: +(new Date()) - 1000,
-        author: "taco_monster",
-        score: 60
-      }
     ];
 
     /*
