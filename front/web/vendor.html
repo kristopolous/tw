@@ -67,167 +67,26 @@
       </div>
     </nav>
 
-
     <div class="container">
       <div class='row'>
-        <div class="col-xs-4">Logo</div>
-        <div class="col-xs-8">
-          Business Name 
-          <div class='row'>
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-default btn-link">Contact</button>
-              <button type="button" class="btn btn-default btn-link">Locate</button>
-            </div>
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-default btn-link">Follow</button>
-              <button type="button" class="btn btn-default btn-link">Social Media</button>
-            </div>
+        <div class="col-md-2"><img src='mockup/logo.jpg' class="img-circle"></div>
+        <div class="col-md-8">
+          <h2>Business Name</h2>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-default btn-link">Contact</button>
+            <button type="button" class="btn btn-default btn-link">Locate</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-default btn-link">Follow</button>
+            <button type="button" class="btn btn-default btn-link">Social Media</button>
           </div>
         </div>
-      <div id="ep-pro" class='endpoint'>
-        <p>Do you run a mobile business?  Are you looking to increase your sales?</p>
 
-        <h2>Know your customers.</h2>
-          <p>Be notified when people search for your product, where they are, and opening a dialog with them.</p>
-          <p>Know what else people search for when they search your product so you know how to situate yourself in the marketplace.</p>
-          <p>Notify nearby customers who are interested in your product where you are.</p>
-          <p>Communicate directly to your customers.</p>
-
-        <h2>Know your competition.</h2>
-          <p>A dashboard with heatmaps telling you when and where people historically want what you sell.</p>
-          <p>See whether they found what they were looking for and how happy they were with it.</p>
-          <p>Know where there's an opening, and where there's a market saturation.</p>
-
-        <h2>Know your business.</h2>
-          <p>Get estimates on the expected return, risk and time to actualize so you know when its time to move on.</p>
-          <p>See the market analytics on greener pastures and know where the best ones are.</p>
-          <p>Find out about the price sensitivity of your customers so you know how your sales will be impacted by your pricing decisions</p>
-        <div class='row deals'>
-         <div class="col-md-4">
-           <div class="panel panel-default">
-             <div class="panel-heading"><h3>DeepInsight</h3></div>
-             <div class="panel-body">
-               Real-time Analytics.
-               <p>Free for 14 days.</p>
-               <h3 class='price'><button class='btn btn-primary'>Get Deep Insight</button> <small>for $39.95/month</small></h3>
-             </div>
-           </div>
-         </div>
-         <div class="col-md-4">
-           <div class="panel panel-default">
-             <div class="panel-heading"><h3>CustomerDragnet</h3></div>
-             <div class="panel-body">
-               <p>Notify nearby customers interested in your product
-               Be "always on" and registered</p>
-               <h3 class='price'><button class='btn btn-primary'>Get More Customers</button> <small>for $19.99/month</small></h3>
-             </div>
-           </div>
-         </div>
-         <div class="col-md-4">
-           <div class="panel panel-default">
-             <div class="panel-heading"><h3>AdWords</h3></div>
-             <div class="panel-body">
-               <p>Be the first result for customers within reach.
-               Restrict them to the hours that you are in business.</p>
-               <h3 class='price'><button class='btn btn-primary'>Sell More</button> starting at $1</h3>
-             </div>
-           </div>
-         </div>
-        </div>
-
-      </div>
-
-
-      <div id="top-level-buttons" class="row">
-        <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
-        <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
-      </div>
-
-      <div id="ep-found" class='row endpoint'>
-
-        <form class="form-horizontal" id="found-form">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <h2>What'd you find?</h2>
-            </div>
-            <div class="input-group col-sm-12">
-              <span id='image-button' class="input-group-btn input-group-lg">
-                <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
-                <button class="btn btn-default btn-add btn-lg" type="button">
-                  <span class="glyphicon glyphicon-camera"></span>
-                </button>
-              </span>
-              <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div id="ep-find" class='row endpoint'>
-
-        <form class="form-horizontal" id="discover-form">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <h2>What're you looking for?</h2>
-            </div>
-            <div class="col-sm-12">
-              <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
-            </div>
-          </div>
-          <div id='discover-suggestions'>
-            <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
-          </div>
-        </form>
-        <div id="result-container">
-          <nav id="result-sort">
-            <ul class="pagination">
-              <li class='active'><a href="#">Most Popular</a></li>
-              <li><a href="#">Shortest Line</a></li>
-            </ul>
-          </nav>
-          <div id='result-list'>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
-      </footer>
     </div>
+    <footer>
+      <p><b>Made with &#9829;</b> &copy; Two Words 2015</p>
+    </footer>
 
-    <div id="template">
-      <script type='text/template' id='tpl-result'>
-        <div class="result panel panel-default">
-        <div class="panel-heading"><h2><%= title %></h2></div>
-          <div class="panel-body">
-            <p><a href="https://www.google.com/maps/?q=<%= lat %>,<%= long %>,8z"><i class="fa fa-map-marker"></i>
-            Map it</a> <%= distance %> away. <span class='time' data='<%= age %>'></span>.</p>
-            <% if (img_url) { %>
-            <div class='image-container'>
-              <img class='img-content' src="<%= img_url %>"> 
-              <img class='img-sizing' src='img/16x9.png'>
-            </div>
-            <% } %>
-            <div class='author-footer'>
-              <div class='metric'>
-                <div class='bg-stars'>
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-
-                <div class='fg-stars' style='width: <%= score %>%'>
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-              </div>
-              <span class='name'>@<%= author %></span>
-            </div>
-          </div>
-        </div>
-      </script>
-    </div>
     <div id="dialog">
       <div class="modal fade" id="dialog-login">
         <div class="modal-dialog">
@@ -246,25 +105,6 @@
           </div>
         </div>
       </div>
-
-      <div class="modal fade" id="dialog-signup">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Sign up</h4>
-            </div>
-            <div class="modal-body text-center">
-              <p><button type='button' class='btn btn-lg btn-default'><i class="fa fa-facebook-square"></i> Sign up with Facebook</button></p>
-              <p><button type='button' class='btn btn-lg btn-default'><i class="fa fa-twitter-square"></i> Sign up with Twitter</button></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
