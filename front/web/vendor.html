@@ -27,6 +27,29 @@
     .content { margin-bottom: 2em }
     .content img {box-shadow: 0 0 1px 1px black}
     .header { margin-top: 3em;margin-bottom: 3em }
+    .buttons {
+      margin-left: -1em;
+    }
+    .buttons div {
+      width: 12em;
+      display: inline-block;
+    }
+    .buttons i {
+      display: inline-block;
+      width: 1em;
+    }
+    .social {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+    .social a {
+      font-weight: normal;
+      display: inline-block; 
+      text-align: center;
+      width: 1.5em;
+      border-radius: 4px;
+      border: 1px solid rgba(216,216,255,0.9);
+      margin: 0.35em 0.20em; }
     </style>
   </head>
 
@@ -60,17 +83,24 @@
 
     <div class="container">
       <div class='row header'>
-        <div class="col-md-4 text-center"><img src='mockup/logo.jpg' class="img-circle"></div>
+        <div class="col-md-4 text-center"><img src='mockup/square_150.png' class="img-circle"></div>
         <div class="col-md-8">
           <h2>Business Name</h2>
-          <div class="col-md-4">
-            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-mobile"></i>
-              Contact</button>
-            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-location-arrow"></i>Locate</button>
+        </div>
+        <div class="col-md-4 buttons">
+          <div>
+            <button type='button' class='btn btn-lg btn-link'><i class="fa fa-mobile"></i> Contact</button>
+            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-location-arrow"></i> Locate</button>
           </div>
-          <div class="col-md-4">
-            <button type="button" class="btn btn-lg btn-link">Follow</button>
-            <button type="button" class="btn btn-lg btn-link">Social Media</button>
+          <div>
+            <button type="button" class="btn btn-lg btn-link"><i class="fa fa-plus"></i>
+               Follow</button>
+            <div class='social'>
+              <a><i class="fa fa-instagram"></i></a>
+              <a><i class="fa fa-facebook"></i></a>
+              <a><i class="fa fa-twitter"></i></a>
+            </div>
+            </button>
           </div>
         </div>
       </div>
