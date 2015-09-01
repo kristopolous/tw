@@ -40,4 +40,7 @@ I think what's more important is to find out the similarity in searches, the hig
 
 ## vendor page
 If someone is paying for the site, they should definitely be able to flesh out a traditional vendor page or simply drop one in from
-another site on a direct link to minimize their work.
+another site on a direct link to minimize their work.  In fact, that's probably more important then getting them to build a profile - 
+free range chicken guy says that any time not on instagram is wasting his time because that's where all the impact is.  
+
+That should be accommodated first since most of these vendors already have a social presence in the classic static traditional sense.
