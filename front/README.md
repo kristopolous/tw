@@ -29,3 +29,11 @@ So what do we need to extract?
   * The location of the vendor
   * The operational aspect (maybe it won't show up if we don't know where it is)
     * The age of the posts - which is really the former hiding as this.
+
+## vendor dash
+The similar searches of the people in a location - maybe the demographics? 
+
+shoe fetish lady really wanted that, but I think you can connect the dots if you can find out what the nature is of the event
+that people are gathering for.
+
+I think what's more important is to find out the similarity in searches, the high underserved times, and the location of them.
