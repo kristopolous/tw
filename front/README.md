@@ -44,3 +44,5 @@ another site on a direct link to minimize their work.  In fact, that's probably 
 free range chicken guy says that any time not on instagram is wasting his time because that's where all the impact is.  
 
 That should be accommodated first since most of these vendors already have a social presence in the classic static traditional sense.
+
+So logo + picture + name + contact button + social media link
