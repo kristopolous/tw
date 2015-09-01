@@ -37,3 +37,7 @@ shoe fetish lady really wanted that, but I think you can connect the dots if you
 that people are gathering for.
 
 I think what's more important is to find out the similarity in searches, the high underserved times, and the location of them.
+
+## vendor page
+If someone is paying for the site, they should definitely be able to flesh out a traditional vendor page or simply drop one in from
+another site on a direct link to minimize their work.
