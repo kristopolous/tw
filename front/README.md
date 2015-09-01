@@ -46,3 +46,11 @@ free range chicken guy says that any time not on instagram is wasting his time b
 That should be accommodated first since most of these vendors already have a social presence in the classic static traditional sense.
 
 So logo + picture + name + contact button + social media link
+
+  [ L ] Some Business Name
+  +---+
+  |   | # follow   # social media
+  |   | # contact  # locate
+  +---+
+
+It's basically a rolodeck card
