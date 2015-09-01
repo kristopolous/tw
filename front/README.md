@@ -54,3 +54,10 @@ So logo + picture + name + contact button + social media link
   +---+
 
 It's basically a rolodeck card
+
+## "my" profile
+There should be a way for someone to see what they contributed, where they were,
+the reviews they left, etc...
+
+## user page
+The user page is a public version of the "my" page.
