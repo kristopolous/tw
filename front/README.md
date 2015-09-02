@@ -20,6 +20,26 @@ actions:
 
 point system for encouragement of posts
 
+The system is of course not just two words ... there's
+
+  public:
+  [ author, photograph, tagged business (if relevent), time, location, two words ]
+
+  private:
+  the questionaire interview that is given to the user.
+
+  Regardless, the results should probably be a twitter knockoff
+
+  This should be content focused, but let's trust that twitter is too
+
+  Also the title has a quantity that specifies the number of results ...
+  eh sure why not
+
+  [photo] [user]: two words
+          location | time
+          [ photo ]
+          
+
 ## search
 Maybe the search page should be an image focused presentation like https://instagram.com/freerangela/
 
