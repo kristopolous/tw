@@ -54,7 +54,21 @@ The search for most of the im services are very user based ... this needs
 to be content based.  Some vendors don't rely on customer loyalty at all
 And that can be done through the existing services - that's not what this service is providing.
 
-There's a few models of course ... there's yelp, twitter, instgram, facebook, tumblr, pinterest, reddit, flickr
+There's a few models of course ... there's yelp, twitter, instgram, facebook, tumblr, pinterest, reddit, flickr.  Search + notifications
+are a key aspect to this.
+
+The underlying user question that needs to be asked here is why
+did the person press that button and what is the ideal course of action
+after interacting with the results.
+
+For sites like facebook, it's finding a friend of course.
+
+For here, it should be finding a commodity item in a close proximity
+and then making sure that they can get it in time.
+
+It's also important to note why pricing isn't terribly important here
+since the assumption is that most of the items will be within a
+commodity pricing model.
 
 ## vendor dash
 The similar searches of the people in a location - maybe the demographics? 
