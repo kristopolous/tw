@@ -50,6 +50,12 @@ So what do we need to extract?
   * The operational aspect (maybe it won't show up if we don't know where it is)
     * The age of the posts - which is really the former hiding as this.
 
+The search for most of the im services are very user based ... this needs
+to be content based.  Some vendors don't rely on customer loyalty at all
+And that can be done through the existing services - that's not what this service is providing.
+
+There's a few models of course ... there's yelp, twitter, instgram, facebook, tumblr, pinterest, reddit, flickr
+
 ## vendor dash
 The similar searches of the people in a location - maybe the demographics? 
 
@@ -78,6 +84,8 @@ It's basically a rolodeck card
 ## "my" profile
 There should be a way for someone to see what they contributed, where they were,
 the reviews they left, etc...
+
+Maybe similar to instagram
 
 ## user page
 The user page is a public version of the "my" page.
