@@ -61,3 +61,9 @@ the reviews they left, etc...
 
 ## user page
 The user page is a public version of the "my" page.
+
+  +-        -+ Joe Blow
+  | gravatar | General Location
+  | fb image | Social Media
+  +-        -+ Follow / Block
+
