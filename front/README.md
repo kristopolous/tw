@@ -70,6 +70,10 @@ It's also important to note why pricing isn't terribly important here
 since the assumption is that most of the items will be within a
 commodity pricing model.
 
+I think the idea is that the most reliably *achievable goals* should take priority.
+
+The focus here is to imbue valuable accurate information to assist.
+
 ## vendor dash
 The similar searches of the people in a location - maybe the demographics? 
 
