@@ -191,7 +191,18 @@ there should be a way to store them.
 
 TODO: payment gateway, accounts of paying members
   Intelligence dashboard
-  vendor profile
   Create mock data
   email reminders of payment
 
+CDN survey: http://cdnsun.com/pricing appears to be < https://www.keycdn.com/pricing
+
+~ $0.04/gb ~= 25,000 images
+
+sms gateway: https://www.nexmo.com/pricing/
+  
+$0.0054/msg - have to think about two things:
+  base level cost on a per customer basis for having this service
+  average number of outbounds on a close and per month
+
+Also, uber, which does this, doesn't have a direct customer, client engagement which makes sense because it has to be
+transactional
