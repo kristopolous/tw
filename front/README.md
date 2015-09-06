@@ -113,3 +113,12 @@ The user page is a public version of the "my" page.
   | fb image | Social Media
   +-        -+ Follow / Block
 
+## Post to xxx
+
+I heard that airbnb's success ran from a "post to cl" feature on their site --- which changed the game because now people could post through
+airbnb and get both sites.
+
+So for here, the idea is that there'd be a "command center" kind of post where you can share it out on twitter, instagram, facebook.  As far
+as the vendors are concerned, it appears that instagram is #1 with the other two being a distant 2nd and 3rd.
+
+It would be nice to be able to pass through down to the other mediums and post in a nice way ... if there's enough space for a feedback to 2words, then put it in, otherwise, omit it.  It has to be better in all ways.
