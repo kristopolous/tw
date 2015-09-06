@@ -205,4 +205,8 @@ $0.0054/msg - have to think about two things:
   average number of outbounds on a close and per month
 
 Also, uber, which does this, doesn't have a direct customer, client engagement which makes sense because it has to be
-transactional
+transactional.  The problem is that if it just just a proxy, there's no threading for sms so there's no way to differentiate
+one customer from another ... you need to keep things either controlled and number agnostic, or linked to an app for the conversation.
+
+Encouraging in-app conversations will be advantageous because there's a value add.  You can know the location of the customer along
+with a verifiable record and identity.  It's a better hairbinger of trust for the veracity of the customer, from the vendors perspective
