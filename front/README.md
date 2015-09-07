@@ -6,6 +6,7 @@ The pages:
   vendor dash
   vendor page
   user page
+  admin
 
 actions:
   
@@ -122,3 +123,7 @@ So for here, the idea is that there'd be a "command center" kind of post where y
 as the vendors are concerned, it appears that instagram is #1 with the other two being a distant 2nd and 3rd.
 
 It would be nice to be able to pass through down to the other mediums and post in a nice way ... if there's enough space for a feedback to 2words, then put it in, otherwise, omit it.  It has to be better in all ways.
+
+## admin
+
+This should have an account CRUD
