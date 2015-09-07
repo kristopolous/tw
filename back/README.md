@@ -194,6 +194,20 @@ TODO: payment gateway, accounts of paying members
   Create mock data
   email reminders of payment
 
+merchant accounts: http://www.digitalmarketer.com/paypal-vs-stripe-vs-merchant-account/
+
+Technical budget:
+
+VPS      20.0000 
+CDN       0.4590  (assumes 250k images at $0.0450 / GB)
+SMS       5.4000  (assumes 1,0000 @ $0.0054 / msg)
+mailgun   0.0000  ???
+android   2.0833  (25/yr)
+ios       8.2500  (99/yr)
+domain    5.4167  (65/yr)
+
+base-level: $40/month
+
 CDN survey: http://cdnsun.com/pricing appears to be < https://www.keycdn.com/pricing
 
 ~ $0.04/gb ~= 25,000 images
