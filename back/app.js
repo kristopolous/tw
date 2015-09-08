@@ -9,6 +9,7 @@ var
   routes = require('./routes/index'),
   users = require('./routes/users'),
   found = require('./routes/found'),
+  admin = require('./routes/admin'),
   find = require('./routes/find'),
   suggest = require('./routes/suggest');
 
@@ -32,6 +33,7 @@ app.use('/users', users);
 // }
 
 app.use('/suggest', suggest);
+app.use('/admin', admin);
 app.use('/find', find);
 app.use('/found', found);
 
