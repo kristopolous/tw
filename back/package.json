@@ -19,5 +19,8 @@
     "serve-favicon": "~2.3.0",
     "passport": ">= 0.0.0",
     "passport-facebook": "~2.0.0"
+  },
+  "devDependencies": {
+    "ejs": "^2.3.4"
   }
 }
