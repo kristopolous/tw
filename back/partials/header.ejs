@@ -11,9 +11,9 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li id='header-find'><a href="/find"><b><i class="fa fa-search"></i> Find It</b></span></a></li>
-        <li id='header-found'><a href="/found"><i class="fa fa-bullhorn"></i> Found it</a></li>
-        <li><a href="/pro"><i class="fa fa-money"></i> Go Pro</a></li>
+        <li class="<%- page == 'find' ? 'active' : '' %>" id='header-find'><a href="/find"><b><i class="fa fa-search"></i> Find It</b></span></a></li>
+        <li class="<%- page == 'found' ? 'active' : '' %>" id='header-found'><a href="/found"><i class="fa fa-bullhorn"></i> Found it</a></li>
+        <li class="<%- page == 'pro' ? 'active' : '' %>"><a href="/pro"><i class="fa fa-money"></i> Go Pro</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#app">Get The App</a></li>
