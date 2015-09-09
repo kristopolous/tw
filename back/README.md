@@ -224,3 +224,40 @@ one customer from another ... you need to keep things either controlled and numb
 
 Encouraging in-app conversations will be advantageous because there's a value add.  You can know the location of the customer along
 with a verifiable record and identity.  It's a better hairbinger of trust for the veracity of the customer, from the vendors perspective
+
+## Data Model
+
+users
+  auth token
+  account type
+  id
+  name
+  email
+  phone number
+  active/inactive
+  join date
+
+messages
+  from
+  to
+  what
+  when
+  where
+  how - transport 
+
+posts
+  what 
+    2 words
+    vendor tag
+    image
+  who
+  where
+  when
+
+feedback - todo
+  note: these are the three things we are looking for.  In the crudest sense
+  they are binary, although that's a poor level of information.
+
+  info
+  found
+  happy
