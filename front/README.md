@@ -124,6 +124,33 @@ as the vendors are concerned, it appears that instagram is #1 with the other two
 
 It would be nice to be able to pass through down to the other mediums and post in a nice way ... if there's enough space for a feedback to 2words, then put it in, otherwise, omit it.  It has to be better in all ways.
 
+This is maturing to a schedule system that does scheduled tweets and posts along with something that a user can interact with for booking.
+
+The interface needs to be really really simple but powerful ... something like
+
+  Post 
+   [ x ] now   [   ] later
+
+  Repeat Post? 
+   [   ] yes   [ x ] no
+
+  +-----+---+---+---+
+  | New | a | b | c |
+  |     +-------------+
+  | blah blah blah    |
+  |                   |
+  +-------------------+
+
+  Include picture?
+   +----+ +----+ +----+
+   |    | |    | |    |
+   +----+ +----+ +----+
+                [ new ]
+
+   [ x ] twitter
+   [ x ] facebook
+   [ x ] instagram
+
 ## admin
 
 This should have an account CRUD
