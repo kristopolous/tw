@@ -266,3 +266,10 @@ testing / orm
 
 
 workflow for scheduling may be important
+The feature is:
+
+  even organizer (not a booker) that does
+  reminders
+  social media
+  recombination for social media ...
+  redoing previous tweets ... adding previous images
