@@ -273,3 +273,7 @@ The feature is:
   social media
   recombination for social media ...
   redoing previous tweets ... adding previous images
+
+should track vendor churn to determine success of spot.
+
+some vendors find twitter > instagram ... most say instagram > twitter
