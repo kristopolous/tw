@@ -254,6 +254,20 @@ posts
   where
   when
 
+schedule
+  who
+  start
+  end
+  where
+  notes
+
+social - a log of what was posted where
+  who   -- who posted it
+  what  -- what was posted
+  where -- what service
+  when  -- when it was posted
+  url   -- a link to the post
+
 feedback - todo
   note: these are the three things we are looking for.  In the crudest sense
   they are binary, although that's a poor level of information.
