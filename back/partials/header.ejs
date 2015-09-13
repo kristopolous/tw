@@ -10,15 +10,19 @@
       <a href='/' class="navbar-brand"><i class="fa fa-hand-peace-o"></i> Two Words</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
       <ul class="nav navbar-nav">
         <li class="<%- page == 'find' ? 'active' : '' %>" id='header-find'><a href="/find"><b><i class="fa fa-search"></i> Find It</b></span></a></li>
         <li class="<%- page == 'found' ? 'active' : '' %>" id='header-found'><a href="/found"><i class="fa fa-bullhorn"></i> Found it</a></li>
+        <li class="<%- page == 'book' ? 'active' : '' %>" id='book'><a href="/book"><i class="fa fa-calendar-plus-o"></i> Book</a></li>
         <li class="<%- page == 'pro' ? 'active' : '' %>"><a href="/pro"><i class="fa fa-money"></i> Go Pro</a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#app">Get The App</a></li>
         <li><a data-toggle="modal" data-target="#dialog-login">Log in</a></li>
       </ul>
+
     </div>
   </div>
 </nav>
