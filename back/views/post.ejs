@@ -1,24 +1,5 @@
 <h1>New Campaign Post</h1>
 <div class='row header'>
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">When</label>
-    <label class="radio-inline">
-      <input type="radio" name="when" value="now"> now 
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="when" value="later"> later
-    </label>
-  </div>
-
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Repeat</label>
-    <label class="radio-inline">
-      <input type="radio" name="repeat" value="now"> yes 
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="repeat" value="later"> never 
-    </label>
-  </div>
 
   <div class='well row'>
     <div class='col-md-1'>
@@ -26,12 +7,6 @@
     </div>
 
     <div class='col-md-11'>
-      <label for="copy">Compose something new or use an existing campaign?</label>
-      <select class="form-control">
-        <option>LACMA</option>
-        <option>Glendale</option>
-        <option>Art Walk</option>
-      </select>
 
       <textarea name="copy" class="form-control" rows="3">
       blahblahblah
@@ -44,10 +19,21 @@
         </div>
 
         <div class='social-post col-md-6'>
-          <button class='btn btn-lg btn-default'><i class="fa fa-twitter"></i></button>
-          <button class='btn btn-lg btn-default'><i class="fa fa-facebook"></i></button>
-          <button class='btn btn-lg btn-default'><i class="fa fa-instagram"></i></button>
-          <button class='btn btn-primary btn-lg'>Post</button>
+          <button title='post on twitter' class='btn btn-lg btn-default'><i class="fa fa-twitter"></i></button>
+          <button title='post on facebook' class='btn btn-lg btn-default'><i class="fa fa-facebook"></i></button>
+          <button title='post on instagram' class='btn btn-lg btn-default'><i class="fa fa-instagram"></i></button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-lg">Post</button>
+            <button type="button" class="btn btn-link btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-cog"></i>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Now</a></li>
+              <li><a href="#">Later</a></li>
+              <li><a href="#">Multiple Times</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
