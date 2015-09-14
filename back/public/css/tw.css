@@ -60,6 +60,15 @@ a{cursor:pointer}
 .post-lhs {
   padding-left: 0;
 }
+.fa-blank {
+  opacity: 0;
+}
 #post-controls {
   margin-top: 0.5em;
+}
+#post-list {
+  background: none ;
+  border: 0;
+  box-shadow: 0 0 0;
+  border-radius: 0;
 }
