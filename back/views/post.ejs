@@ -20,29 +20,35 @@
     </label>
   </div>
 
-  <div class='well'>
-    <label for="copy">Compose something new or use an existing campaign?</label>
-    <select class="form-control">
-      <option>LACMA</option>
-      <option>Glendale</option>
-      <option>Art Walk</option>
-    </select>
+  <div class='well row'>
+    <div class='col-md-1'>
+    <img src='mockup/square_150.png' class="img-square img-thumbnail">  
+    </div>
 
-    <textarea name="copy" class="form-control" rows="3">
-    blahblahblah
-    </textarea>
+    <div class='col-md-11'>
+      <label for="copy">Compose something new or use an existing campaign?</label>
+      <select class="form-control">
+        <option>LACMA</option>
+        <option>Glendale</option>
+        <option>Art Walk</option>
+      </select>
 
-    <div class='row'>
-      <div class='col-md-6'>
-        <button class='btn btn-link btn-lg'><i class="fa fa-camera"></i> Add Photos</button>
-        <button class='btn btn-link btn-lg'><i class="fa fa-map-marker"></i> Use Current Location</button>
-      </div>
+      <textarea name="copy" class="form-control" rows="3">
+      blahblahblah
+      </textarea>
 
-      <div class='social col-md-6 pull-right'>
-        <button class='btn btn-lg btn-default'><i class="fa fa-twitter"></i></button>
-        <button class='btn btn-lg btn-default'><i class="fa fa-facebook"></i></button>
-        <button class='btn btn-lg btn-default'><i class="fa fa-instagram"></i></button>
-        <button class='btn btn-primary btn-lg'>Post</button>
+      <div id='post-controls'>
+        <div class='post-lhs col-md-6'>
+          <button class='btn btn-link btn-lg'><i class="fa fa-camera"></i> Add Photos</button>
+          <button class='btn btn-link btn-lg'><i class="fa fa-map-marker"></i> Use Current Location</button>
+        </div>
+
+        <div class='social-post col-md-6'>
+          <button class='btn btn-lg btn-default'><i class="fa fa-twitter"></i></button>
+          <button class='btn btn-lg btn-default'><i class="fa fa-facebook"></i></button>
+          <button class='btn btn-lg btn-default'><i class="fa fa-instagram"></i></button>
+          <button class='btn btn-primary btn-lg'>Post</button>
+        </div>
       </div>
     </div>
   </div>

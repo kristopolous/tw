@@ -53,3 +53,13 @@ a{cursor:pointer}
   border: 1px solid rgba(216,216,255,0.9);
   margin: 0.35em 0.20em; 
 }
+.social-post {
+  text-align:right;
+  padding-right: 0;
+}
+.post-lhs {
+  padding-left: 0;
+}
+#post-controls {
+  margin-top: 0.5em;
+}
