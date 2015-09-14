@@ -11,6 +11,7 @@ var
   found = require('./routes/found'),
   admin = require('./routes/admin'),
   find = require('./routes/find'),
+  book = require('./routes/book'),
   suggest = require('./routes/suggest');
 
 var app = express();
@@ -36,6 +37,7 @@ app.use('/suggest', suggest);
 app.use('/admin', admin);
 app.use('/find', find);
 app.use('/found', found);
+app.use('/book', book);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
