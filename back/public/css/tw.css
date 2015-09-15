@@ -82,6 +82,7 @@ a{cursor:pointer}
   padding-left: 0em;
 }
 #plan .well {
+  background: rgba(245, 245, 245, 0.7);
 }
 #plan .bg { position: absolute;
   width: 100%;
