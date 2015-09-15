@@ -14,61 +14,62 @@
 a{cursor:pointer}
 </style>
 
-<div class='row'>
-  <p class="lead">Find what's happening around you - right this second.</p>
-</div>
+<div id='plan' class='full-view'>
+  <img class='bg' src='images/find.jpg'>
+    <h1>Find what's happening around you - right this second.</h1>
 
-<form class="form-horizontal" id="discover-form">
-  <div class="form-group">
-    <div class="col-sm-12">
-      <h2>What're you looking for?</h2>
-    </div>
-    <div class="col-sm-12">
-      <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
-    </div>
-  </div>
-  <div id='discover-suggestions'>
-    <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
-  </div>
-</form>
-<div id="result-container">
-  <nav id="result-sort">
-    <ul class="pagination">
-      <li class='active'><a href="#">Most Popular</a></li>
-      <li><a href="#">Shortest Line</a></li>
-    </ul>
-  </nav>
-  <div id='result-list'>
-  </div>
-</div>
-
-<div id="template">
-  <script type='text/template' id='tpl-result'>
-    <div class="result panel panel-default">
-    <div class="panel-heading"><h2>{{= title }}</h2></div>
-      <div class="panel-body">
-        <p><a href="https://www.google.com/maps/?q={{= lat }},{{= long }},8z"><i class="fa fa-map-marker"></i>
-        Map it</a> {{= distance }} away. <span class='time' data='{{= age }}'></span>.</p>
-        {{ if (img_url) { }}
-        <div class='image-container'>
-          <img class='img-content' src="{{= img_url }}"> 
-          <img class='img-sizing' src='img/16x9.png'>
-        </div>
-        {{ } }}
-        <div class='author-footer'>
-          <div class='metric'>
-            <div class='bg-stars'>
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-
-            <div class='fg-stars' style='width: {{= score }}%'>
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-          </div>
-          <span class='name'>@{{= author }}</span>
-        </div>
+  <form class="form-horizontal" id="discover-form">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <h2>What're you looking for?</h2>
+      </div>
+      <div class="col-sm-12">
+        <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
       </div>
     </div>
+    <div id='discover-suggestions'>
+      <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
+    </div>
+  </form>
+  <div id="result-container">
+    <nav id="result-sort">
+      <ul class="pagination">
+        <li class='active'><a href="#">Most Popular</a></li>
+        <li><a href="#">Shortest Line</a></li>
+      </ul>
+    </nav>
+    <div id='result-list'>
+    </div>
+  </div>
+
+  <div id="template">
+    <script type='text/template' id='tpl-result'>
+      <div class="result panel panel-default">
+      <div class="panel-heading"><h2>{{= title }}</h2></div>
+        <div class="panel-body">
+          <p><a href="https://www.google.com/maps/?q={{= lat }},{{= long }},8z"><i class="fa fa-map-marker"></i>
+          Map it</a> {{= distance }} away. <span class='time' data='{{= age }}'></span>.</p>
+          {{ if (img_url) { }}
+          <div class='image-container'>
+            <img class='img-content' src="{{= img_url }}"> 
+            <img class='img-sizing' src='img/16x9.png'>
+          </div>
+          {{ } }}
+          <div class='author-footer'>
+            <div class='metric'>
+              <div class='bg-stars'>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </div>
+
+              <div class='fg-stars' style='width: {{= score }}%'>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </div>
+            </div>
+            <span class='name'>@{{= author }}</span>
+          </div>
+        </div>
+      </div>
+  </div>
   </script>
   <script src='/js/find.js'></script>
 </div>
