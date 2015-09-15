@@ -89,7 +89,10 @@ a{cursor:pointer}
   z-index: -1;
   top:0;left:0;
 }
-
+.full-view h1 {
+  font-weight: 800;
+  font-family: 'Khula', sans-serif;
+}
 #service-book {
   display:inline-block;
 }
