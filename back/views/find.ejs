@@ -18,35 +18,28 @@ a{cursor:pointer}
   <p class="lead">Find what's happening around you - right this second.</p>
 </div>
 
-<div id="top-level-buttons" class="row">
-  <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
-  <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
-</div>
-
-<div id="ep-found" class='row endpoint'>
-
-  <form class="form-horizontal" id="found-form">
-    <div class="form-group">
-      <div class="col-sm-12">
-        <h2>What'd you find?</h2>
-      </div>
-      <div class="input-group col-sm-12">
-        <span id='image-button' class="input-group-btn input-group-lg">
-          <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
-          <button class="btn btn-default btn-add btn-lg" type="button">
-            <span class="glyphicon glyphicon-camera"></span>
-          </button>
-        </span>
-        <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
-      </div>
+<form class="form-horizontal" id="discover-form">
+  <div class="form-group">
+    <div class="col-sm-12">
+      <h2>What're you looking for?</h2>
     </div>
-    <div class="form-group">
-      <div class="col-sm-12">
-        <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
-      </div>
+    <div class="col-sm-12">
+      <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
     </div>
-  </form>
-
+  </div>
+  <div id='discover-suggestions'>
+    <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
+  </div>
+</form>
+<div id="result-container">
+  <nav id="result-sort">
+    <ul class="pagination">
+      <li class='active'><a href="#">Most Popular</a></li>
+      <li><a href="#">Shortest Line</a></li>
+    </ul>
+  </nav>
+  <div id='result-list'>
+  </div>
 </div>
 
 <div id="template">
