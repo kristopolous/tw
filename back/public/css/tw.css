@@ -72,6 +72,17 @@ a{cursor:pointer}
   box-shadow: 0 0 0;
   border-radius: 0;
 }
+#plan {
+  height: 20em;
+  overflow: hidden;
+  padding-left: 0em;
+}
+#plan .well {
+}
+#plan .bg { position: absolute;
+width: 100%;
+z-index: -1;
+}
 
 #service-book {
   display:inline-block;
