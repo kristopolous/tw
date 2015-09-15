@@ -14,72 +14,68 @@
 a{cursor:pointer}
 </style>
 
-  <div class="container">
-    <div class='row'>
-      <p class="lead">Find what's happening around you - right this second.</p>
+<div class='row'>
+  <p class="lead">Find what's happening around you - right this second.</p>
+</div>
+
+<div id="top-level-buttons" class="row">
+  <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
+  <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
+</div>
+
+<div id="ep-found" class='row endpoint'>
+
+  <form class="form-horizontal" id="found-form">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <h2>What'd you find?</h2>
+      </div>
+      <div class="input-group col-sm-12">
+        <span id='image-button' class="input-group-btn input-group-lg">
+          <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
+          <button class="btn btn-default btn-add btn-lg" type="button">
+            <span class="glyphicon glyphicon-camera"></span>
+          </button>
+        </span>
+        <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
+      </div>
     </div>
-
-
-    <div id="top-level-buttons" class="row">
-      <button type="button" id='discover-button' class="btn btn-first btn-default btn-block btn-lg">I Wanna Find Something!</button>
-      <button type="button" id='found-button' class="btn btn-first btn-default btn-block btn-lg">I Found Something!</button>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
+      </div>
     </div>
+  </form>
 
-    <div id="ep-found" class='row endpoint'>
+</div>
 
-      <form class="form-horizontal" id="found-form">
-        <div class="form-group">
-          <div class="col-sm-12">
-            <h2>What'd you find?</h2>
-          </div>
-          <div class="input-group col-sm-12">
-            <span id='image-button' class="input-group-btn input-group-lg">
-              <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
-              <button class="btn btn-default btn-add btn-lg" type="button">
-                <span class="glyphicon glyphicon-camera"></span>
-              </button>
-            </span>
-            <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
-          </div>
+<div id="template">
+  <script type='text/template' id='tpl-result'>
+    <div class="result panel panel-default">
+    <div class="panel-heading"><h2>{{= title }}</h2></div>
+      <div class="panel-body">
+        <p><a href="https://www.google.com/maps/?q={{= lat }},{{= long }},8z"><i class="fa fa-map-marker"></i>
+        Map it</a> {{= distance }} away. <span class='time' data='{{= age }}'></span>.</p>
+        {{ if (img_url) { }}
+        <div class='image-container'>
+          <img class='img-content' src="{{= img_url }}"> 
+          <img class='img-sizing' src='img/16x9.png'>
         </div>
-        <div class="form-group">
-          <div class="col-sm-12">
-            <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div id="ep-find" class='row endpoint'>
-  </div>
-
-  <div id="template">
-    <script type='text/template' id='tpl-result'>
-      <div class="result panel panel-default">
-      <div class="panel-heading"><h2>{{= title }}</h2></div>
-        <div class="panel-body">
-          <p><a href="https://www.google.com/maps/?q={{= lat }},{{= long }},8z"><i class="fa fa-map-marker"></i>
-          Map it</a> {{= distance }} away. <span class='time' data='{{= age }}'></span>.</p>
-          {{ if (img_url) { }}
-          <div class='image-container'>
-            <img class='img-content' src="{{= img_url }}"> 
-            <img class='img-sizing' src='img/16x9.png'>
-          </div>
-          {{ } }}
-          <div class='author-footer'>
-            <div class='metric'>
-              <div class='bg-stars'>
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-              </div>
-
-              <div class='fg-stars' style='width: {{= score }}%'>
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-              </div>
+        {{ } }}
+        <div class='author-footer'>
+          <div class='metric'>
+            <div class='bg-stars'>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
             </div>
-            <span class='name'>@{{= author }}</span>
+
+            <div class='fg-stars' style='width: {{= score }}%'>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
           </div>
+          <span class='name'>@{{= author }}</span>
         </div>
       </div>
-    </script>
-  </div>
+    </div>
+  </script>
   <script src='/js/find.js'></script>
+</div>
