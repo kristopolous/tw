@@ -72,16 +72,21 @@ a{cursor:pointer}
   box-shadow: 0 0 0;
   border-radius: 0;
 }
+#plan-container {
+  padding: 5em;
+}
 #plan {
-  height: 20em;
+  text-align: right;
   overflow: hidden;
+  position: relative;
   padding-left: 0em;
 }
 #plan .well {
 }
 #plan .bg { position: absolute;
-width: 100%;
-z-index: -1;
+  width: 100%;
+  z-index: -1;
+  top:0;left:0;
 }
 
 #service-book {
