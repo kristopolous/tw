@@ -72,10 +72,10 @@ a{cursor:pointer}
   box-shadow: 0 0 0;
   border-radius: 0;
 }
-#plan-container {
+.full-view-container {
   padding: 5em;
 }
-#plan {
+.full-view  {
   text-align: right;
   overflow: hidden;
   position: relative;
@@ -84,7 +84,7 @@ a{cursor:pointer}
 #plan .well {
   background: rgba(245, 245, 245, 0.7);
 }
-#plan .bg { position: absolute;
+.full-view .bg { position: absolute;
   width: 100%;
   z-index: -1;
   top:0;left:0;
