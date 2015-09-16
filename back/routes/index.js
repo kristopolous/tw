@@ -6,6 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('base', { page: 'index', title: 'Introducing two words'} );
 });
 
+router.get('/jobs', function(req, res, next) {
+  res.render('base', { page: 'jobs', title: 'Introducing two words'} );
+});
+router.get('/legal', function(req, res, next) {
+  res.render('base', { page: 'legal', title: 'Introducing two words'} );
+});
 router.get('/pro', function(req, res, next) {
   res.render('base', { page: 'pro', title: 'The Enterprise Goes Warp Speed'} );
 });
