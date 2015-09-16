@@ -89,6 +89,13 @@ a{cursor:pointer}
   z-index: -1;
   top:0;left:0;
 }
+.full-image {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: -1;
+}
 .full-view h1 {
   font-weight: 800;
   font-size: 50px;
@@ -104,4 +111,7 @@ a{cursor:pointer}
 }
 #service-book {
   display:inline-block;
+}
+.navbar {
+  background-color: rgba(248, 248, 248, 0.9);
 }

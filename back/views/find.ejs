@@ -2,6 +2,21 @@
 .navbar {
   margin-bottom: 0;
 }
+footer p { margin-bottom:0;padding-bottom:0 }
+footer a { color: white }
+footer {
+position: fixed;
+bottom: 0;
+left:0;
+margin: 0 auto;
+z-index: 1;
+color: white;
+opacity: 1;
+padding: 0.5em;
+background: rgba(128,128,128,0.5);
+}
+#result-container {
+display: none}
 .container {
 margin: 0;
 padding: 0;
@@ -21,15 +36,13 @@ width: 100%;
 .endpoint { display: none }
 a{cursor:pointer}
 </style>
+<img class='full-image' src='images/find.jpg'>
 <div id='plan' class='full-view'>
-  <img class='bg' src='images/find.jpg'>
 
   <form class="form-horizontal full-view-container" id="discover-form">
+    <h1 class='light'>Find what's happening</h1>
     <div class='row well' id='service-book'>
       <div class="form-group">
-        <div class="col-sm-12">
-          <h1 >Find what's happening</h1>
-        </div>
         <div class="col-sm-12">
           <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
         </div>
