@@ -23,19 +23,20 @@ a{cursor:pointer}
 </style>
 <div id='plan' class='full-view'>
   <img class='bg' src='images/find.jpg'>
-  <h1 class='light'>Find what's happening - right now.</h1>
 
   <form class="form-horizontal full-view-container" id="discover-form">
-    <div class="form-group">
-      <div class="col-sm-12">
-        <h2>What're you looking for?</h2>
+    <div class='row well' id='service-book'>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <h1 >Find what's happening</h1>
+        </div>
+        <div class="col-sm-12">
+          <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
+        </div>
       </div>
-      <div class="col-sm-12">
-        <input type="text" class="input-lg form-control" id="discover-input" placeholder="Say it in two words or less!">
+      <div id='discover-suggestions'>
+        <h3>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
       </div>
-    </div>
-    <div id='discover-suggestions'>
-      <h3 class='light'>Suggestions: <a class='label label-default'>Bacon hotdog</a> <a class='label label-default'>Taco truck</a> <a class='label label-default'>Free music</a> <a class='label label-default'>Cheap pizza</a> <a class='label label-default'>After hours</a> <a class='label label-default'>Grand opening</a></h3>
     </div>
   </form>
   <div id="result-container">
