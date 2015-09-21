@@ -7,13 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/jobs', function(req, res, next) {
-  res.render('base', { page: 'jobs', title: 'Introducing two words'} );
+  res.render('base', { page: 'jobs', title: 'Joining the Force'} );
 });
 router.get('/legal', function(req, res, next) {
   res.render('base', { page: 'legal', title: 'Introducing two words'} );
 });
 router.get('/contact', function(req, res, next) {
-  res.render('base', { footer_class:'fixed', page: 'contact', title: 'Introducing two words'} );
+  res.render('base', { footer_class:'fixed', page: 'contact', title: 'Making Contact'} );
 });
 router.get('/pro', function(req, res, next) {
   res.render('base', { page: 'pro', title: 'The Enterprise Goes Warp Speed'} );
