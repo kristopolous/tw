@@ -115,6 +115,10 @@ a{cursor:pointer}
 .navbar {
   background-color: rgba(248, 248, 248, 0.9);
 }
+footer.fixed a {
+  text-decoration: underline;
+  color: white 
+}
 footer.fixed p { margin-bottom:0;padding-bottom:0 }
 footer.fixed a { color: white }
 footer.fixed {
