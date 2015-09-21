@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('base', { page: 'post', title: 'title'} );
+  res.render('base', { page: 'post', title: 'found something', type: 'user' } );
 });
 
 // announce you've found something.
