@@ -1,0 +1,91 @@
+<% if (type == 'vendor') { %>
+<h3>Campaign Creation</h3>
+<div class='row'>
+
+  <div class='well row'>
+    <div class='col-md-1'>
+    <img src='mockup/square_150.png' class="img-square img-thumbnail">  
+    </div>
+
+    <div class='col-md-11'>
+
+      <textarea name="copy" class="form-control" rows="3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</textarea>
+
+      <div id='post-controls'>
+        <div class='post-lhs col-md-7'>
+          <button class='btn btn-link btn-lg'><i class="fa fa-camera"></i> Add Photos</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-link btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-map-marker"></i> Use Current Location
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-check"></i> Use current location</a></li>
+              <li><a href="#"><i class="fa fa-check fa-blank"></i> Use another location</a></li>
+              <li><a href="#"><i class="fa fa-check fa-blank"></i> No location</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-link btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-clock-o"></i> Post Now 
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-check"></i> Now</a></li>
+              <li><a href="#"><i class="fa fa-check fa-blank"></i> Later</a></li>
+              <li><a href="#"><i class="fa fa-check fa-blank"></i> Multiple Times</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='social-post col-md-5'>
+          <button title='post on twitter' class='btn btn-lg btn-default'><i class="fa fa-twitter"></i></button>
+          <button title='post on facebook' class='btn btn-lg btn-default'><i class="fa fa-facebook"></i></button>
+          <button title='post on instagram' class='btn btn-lg btn-default'><i class="fa fa-instagram"></i></button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-lg">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='post-list' class='well'>
+    <div class='row'>
+      <div class='col-md-1'>
+      <img src='mockup/square_150.png' class="img-square img-thumbnail">  
+      </div>
+      <div class='col-md-11'>
+        <p><i class="fa fa-twitter"></i> <i class="fa fa-facebook"></i> <i class="fa fa-map-marker"></i> | Sept 20, 2015</p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+        </p>
+        <p>
+        <button class='btn btn-default'><i class="fa fa-bar-chart"></i> stats</button> <button class='btn btn-default'><i class="fa fa-retweet"></i> repost</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <form class="form-horizontal" id="found-form">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <h2>What'd you find?</h2>
+      </div>
+      <div class="input-group col-sm-12">
+        <span id='image-button' class="input-group-btn input-group-lg">
+          <input type="file" id="image-upload" accept=".png,.jpg,.jpeg">
+          <button class="btn btn-default btn-add btn-lg" type="button">
+            <span class="glyphicon glyphicon-camera"></span>
+          </button>
+        </span>
+        <input type="text" class="input-lg form-control" id="found-input" placeholder="Say it in two words or less!">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-block btn-success btn-lg">I Found It!</button>
+      </div>
+    </div>
+  </form>
