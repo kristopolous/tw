@@ -115,3 +115,16 @@ a{cursor:pointer}
 .navbar {
   background-color: rgba(248, 248, 248, 0.9);
 }
+footer.fixed p { margin-bottom:0;padding-bottom:0 }
+footer.fixed a { color: white }
+footer.fixed {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  margin: 0 auto;
+  z-index: 1;
+  color: white;
+  opacity: 1;
+  padding: 0.5em;
+  background: rgba(92,92,92,0.7);
+}

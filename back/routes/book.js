@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.render('base', { page: 'book', title: 'Book a service'} );
+  res.render('base', { footer_class: 'fixed', page: 'book', title: 'Book a service'} );
 });
 
 module.exports = router;
