@@ -13,7 +13,7 @@ router.get('/legal', function(req, res, next) {
   res.render('base', { page: 'legal', title: 'Introducing two words'} );
 });
 router.get('/contact', function(req, res, next) {
-  res.render('base', { page: 'contact', title: 'Introducing two words'} );
+  res.render('base', { footer_class:'fixed', page: 'contact', title: 'Introducing two words'} );
 });
 router.get('/pro', function(req, res, next) {
   res.render('base', { page: 'pro', title: 'The Enterprise Goes Warp Speed'} );
