@@ -2,13 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('base', { page: 'post', title: 'found something', type: 'user' } );
+  res.render('base', { page: 'found', title: 'found something', type: 'user' } );
 });
-
-// announce you've found something.
-router.post('/', function(req, res, next) {
-  console.log(req.body);
-  res.render('index', { title: 'Express' });
+router.get('/campaign', function(req, res, next) {
+  res.render('base', { page: 'campaign_post', title: 'found something', type: 'user' } );
 });
 
 module.exports = router;
