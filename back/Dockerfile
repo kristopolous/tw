@@ -24,6 +24,8 @@ RUN \
     && apt-get update \
     && apt-get install puppet -y
 
+RUN apt-get install -y mysql-server apache2 vim 
+
 EXPOSE 22
 
 RUN mkdir -p /var/run/sshd
