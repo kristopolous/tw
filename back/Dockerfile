@@ -24,7 +24,14 @@ RUN \
     && apt-get update \
     && apt-get install puppet -y
 
-RUN apt-get install -y mysql-server apache2 vim 
+RUN apt-get install -y mysql-server apache2 vim wget
+
+RUN wget https://nodejs.org/dist/v4.1.1/node-v4.1.1-linux-x64.tar.gz \
+    && tar xzvf node-v4.1.1-linux-x64.tar.gz \
+    && cd node-*-linux-x64/bin \
+    && ln $PWD/node /usr/bin \
+    && ln $PWD/npm /usr/bin \
+
 
 EXPOSE 22
 
