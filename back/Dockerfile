@@ -31,6 +31,7 @@ RUN wget https://nodejs.org/dist/v4.1.1/node-v4.1.1-linux-x64.tar.gz \
     && cd node-*-linux-x64/bin \
     && ln $PWD/node /usr/bin \
     && ln $PWD/npm /usr/bin \
+    && cd ..
 
 
 EXPOSE 22
