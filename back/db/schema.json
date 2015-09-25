@@ -9,7 +9,9 @@
       "active": "boolean default true",
       "type": "integer default 0",
       "phone": "text",
-      "misc": "bigtext"
+      "misc": "bigtext",
+      "fbauth": "text",
+      "twauth": "text"
     },
     "customers": {
       "id": "integer autoincrement",
