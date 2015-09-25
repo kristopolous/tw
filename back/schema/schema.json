@@ -20,6 +20,11 @@
     }
     "history": {
       "id": "integer autoincrement",
+      "vendor_id": "integer",
+      "venue_id": "integer",
+      "arrive_time": "datetime default now",
+      "duration_min": "integer default 0"
+    }
   }
 }
 
