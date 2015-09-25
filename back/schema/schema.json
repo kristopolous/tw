@@ -6,7 +6,10 @@
       "username": "text unique",
       "name": "text",
       "created": "datetime default now",
-      "active": "boolean default true"
+      "active": "boolean default true",
+      "type": "integer default 0",
+      "phone": "text",
+      "misc": "bigtext"
     },
     "customers": {
       "id": "integer autoincrement",
@@ -17,7 +20,7 @@
       "long": "float",
       "lat": "float",
       "name": "text"
-    }
+    },
     "history": {
       "id": "integer autoincrement",
       "vendor_id": "integer",
