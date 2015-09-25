@@ -1,11 +1,14 @@
 {
-  'date': '20150924',
-  'tables': {
-    'vendors': {
-      'name': 'string',
-
+  "date": "20150924",
+  "tables": {
+    "vendors": {
+      "id": "integer autoincrement",
+      "username": "text unique",
+      "name": "text",
+      "created": "datetime default now",
+      "active": "boolean default true"
     },
-    'customers': {
+    "customers": {
     }
   }
 }
