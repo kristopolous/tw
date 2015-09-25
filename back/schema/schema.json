@@ -1,6 +1,12 @@
 {
   'date': '20150924',
   'tables': {
+    'vendors': {
+      'name': 'string',
+
+    },
+    'customers': {
+    }
   }
 }
 
