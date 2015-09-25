@@ -9,7 +9,17 @@
       "active": "boolean default true"
     },
     "customers": {
+      "id": "integer autoincrement",
+      "username": "text unique"
+    },
+    "venues": {
+      "id": "integer autoincrement",
+      "long": "float",
+      "lat": "float",
+      "name": "text"
     }
+    "history": {
+      "id": "integer autoincrement",
   }
 }
 
